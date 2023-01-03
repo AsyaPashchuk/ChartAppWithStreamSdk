@@ -5,7 +5,6 @@ import androidx.lifecycle.viewModelScope
 import com.example.chartappwithstreamsdk.util.Constants.MIN_USERNAME_LENGTH
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.getstream.chat.android.client.ChatClient
-import io.getstream.chat.android.client.call.await
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.launch

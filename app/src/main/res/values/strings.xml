@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ChartAppWithStreamSdk</string>
     <string name="api_key">kr2fsw5va9tg</string>
+    <string name="secret_key">"dt55fmj9cdyh6qff7sggq8tsyw2k5pvxwgb3y68nnxgnhznvzv76stwn34957apt"</string>
     <string name="confirm">Confirm</string>
     <string name="login">Login</string>
     <string name="your_name">Your name</string>

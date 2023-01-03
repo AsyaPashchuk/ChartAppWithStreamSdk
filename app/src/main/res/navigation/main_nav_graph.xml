@@ -7,5 +7,32 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.chartappwithstreamsdk.ui.login.LoginFragment"
-        android:label="LoginFragment" />
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_channelFragment"
+            app:destination="@id/channelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/channelFragment"
+        android:name="com.example.chartappwithstreamsdk.ui.channel.ChannelFragment"
+        android:label="ChannelFragment" >
+        <action
+            android:id="@+id/action_channelFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_channelFragment_to_createChannelDialog"
+            app:destination="@id/createChannelDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.chartappwithstreamsdk.ui.chat.ChatFragment"
+        android:label="ChatFragment" >
+        <argument
+            android:name="channelId"
+            app:argType="string" />
+    </fragment>
+    <dialog
+        android:id="@+id/createChannelDialog"
+        android:name="com.example.chartappwithstreamsdk.ui.channel.CreateChannelDialog"
+        android:label="CreateChannelDialog" />
 </navigation>
